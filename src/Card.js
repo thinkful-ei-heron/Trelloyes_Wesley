@@ -1,8 +1,15 @@
 import React from 'react';
 
-function Cards(){
+function Card(props){
+  const title = props.title;
+  const content = props.content;
+
   return(
-  <p>Wesley</p>
+    <div class="Card">
+    <button type="button">delete</button>
+    <h3>{title}</h3>
+    <p>{content}</p>
+  </div>
 )}
 
-export default Cards;
+export default Card;
